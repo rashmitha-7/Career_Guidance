@@ -50,3 +50,8 @@ The project consists of two main components:
 cd Career_guidance_backend
 npm install
 npm run dev
+
+The backend will run at: http://localhost:5000
+
+Mock Mode: The backend is configured to run in mock mode if MongoDB is not available. This allows for testing the application without a database connection.
+
