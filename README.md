@@ -2,7 +2,7 @@
 
 A comprehensive career guidance platform that connects students and professionals with mentors, provides resources for various career paths, and helps users make informed career decisions.
 
----
+
 
 ## 📁 Project Structure
 
@@ -11,7 +11,7 @@ The project consists of two main components:
 1. **Career_guidance_community_portal** – Frontend React application  
 2. **Career_guidance_backend** – Backend Node.js/Express API
 
----
+
 
 ## ✨ Features
 
@@ -61,7 +61,7 @@ npm start
 ```
 The frontend will run at: http://localhost:3000
 
-### ⚙️ Mock Mode
+## ⚙️ Mock Mode
 
 If MongoDB is not available or not connected, the backend automatically runs in **mock mode**.
 
