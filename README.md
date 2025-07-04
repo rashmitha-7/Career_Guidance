@@ -22,7 +22,6 @@ The project consists of two main components:
 - Personalized recommendations  
 - Educational resources library
 
----
 
 ## 🔧 Backend Technologies
 
@@ -31,7 +30,7 @@ The project consists of two main components:
 - MongoDB  
 - JWT Authentication
 
----
+
 
 ## 🎨 Frontend Technologies
 
@@ -40,7 +39,7 @@ The project consists of two main components:
 - Context API for state management  
 - CSS / SCSS for styling
 
----
+
 
 ## 🚀 Getting Started
 
@@ -50,8 +49,26 @@ The project consists of two main components:
 cd Career_guidance_backend
 npm install
 npm run dev
-
+```
 The backend will run at: http://localhost:5000
 
-Mock Mode: The backend is configured to run in mock mode if MongoDB is not available. This allows for testing the application without a database connection.
+### 🌐 Frontend Setup
+
+```bash
+cd Career_guidance_community_portal
+npm install
+npm start
+```
+The frontend will run at: http://localhost:3000
+
+### ⚙️ Mock Mode
+
+If MongoDB is not available or not connected, the backend automatically runs in **mock mode**.
+
+This allows developers to:
+- Test frontend features without a live database
+- Simulate API responses using in-memory data
+- Speed up development and debugging
+
+> ✅ No database setup required in mock mode — perfect for local testing!
 
