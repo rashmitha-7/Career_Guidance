@@ -1,0 +1,365 @@
+/* Ensure equal image sizes */
+.category-img {
+    width: 100%;  /* Ensures responsiveness */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Crops the image properly */
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+  }
+  
+  /* Fade-in effect for the container */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Hover effect for cards */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Library Container */
+  .library-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+  }
+  
+  /* Search and Filter Styles */
+  .search-filter-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+  }
+  
+  .search-input {
+    padding-left: 45px;
+    border-radius: 30px;
+    height: 50px;
+    box-shadow: none;
+    border: 1px solid #dee2e6;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+  }
+  
+  .reset-button {
+    height: 50px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+  }
+  
+  .results-count {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+  
+  /* Category Card Styles */
+  .categories-grid {
+    margin-top: 1rem;
+  }
+  
+  .category-card-container {
+    /* Removed animation properties as they are no longer managed by JS */
+    /* opacity: 0; */
+    /* transform: translateY(20px); */
+    /* transition: opacity 0.6s ease, transform 0.6s ease; */
+  }
+  
+  /* The .animated class is no longer used, so this rule is effectively removed */
+  /* .category-card-container.animated {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+  
+  .category-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    backface-visibility: hidden;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+    /* Soft blue to light background */
+  }
+  
+  .category-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .category-image-wrapper {
+    height: 180px; /* Fixed height for image container */
+    overflow: hidden;
+    display: flex; /* Use flex to center image if smaller */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-img-fixed-height {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+  }
+  
+  .category-card:hover .category-img-fixed-height {
+    transform: scale(1.08);
+    filter: brightness(0.85);
+  }
+  
+  .category-overlay {
+    /* Removed as it's no longer needed for the new design */
+    display: none;
+  }
+  
+  .category-name {
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #333; /* Ensure text is visible */
+    font-size: 1.1rem;
+  }
+  
+  .category-description {
+    color: #6c757d; /* Ensure text is visible */
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4.2em;
+  }
+  
+  /* Resource Badge Styles */
+  .resource-badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+  }
+  
+  /* Icon styles for category cards */
+  .category-overlay svg {
+    font-size: 2.5rem;
+    color: white;
+    stroke-width: 1.5;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Text truncation */
+  .text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section h2 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .cta-section .btn-success {
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-section .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+  }
+  
+  /* No Results */
+  .no-results {
+    padding: 3rem 0;
+  }
+  
+  .no-results h3 {
+    color: #6c757d;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991.98px) {
+    .category-card-container {
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .search-filter-container {
+      padding: 15px;
+    }
+    
+    .category-image-container {
+      height: 160px;
+    }
+    
+    .category-description {
+      -webkit-line-clamp: 2;
+      height: 2.8em;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .category-card-container {
+      max-width: 100%;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .category-image-container {
+      height: 140px;
+    }
+    
+    .resource-badge {
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Make sure all clickable elements show pointer cursor */
+  .category-card a, 
+  .category-image-container,
+  .category-name,
+  .category-overlay,
+  button {
+    cursor: pointer;
+  }
+  
+  /* Enhance hover effects */
+  .category-card-container a:hover .category-name {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .category-card-container a:hover {
+    text-decoration: none;
+  }
+  
+  /* Clickable card body */
+  .category-card .card-body {
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-card a:hover .card-body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Make clickable content look and behave like a link */
+  .clickable-content {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .clickable-content:hover .category-name {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .clickable-content:hover .card-body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Add hover effect to show button on hover */
+  .category-card .hover-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #007bff;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    pointer-events: auto;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .category-card:hover .hover-button {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .category-card .hover-button:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translate(-50%, -50%) scale(1.05);
+    text-decoration: none;
+  }
+  
+  .suggestion-box h5 {
+    color: #333; /* Ensure heading is visible */
+  }
+  
+  .suggestion-box p {
+    color: #6c757d; /* Ensure paragraph text is visible */
+  }
+  

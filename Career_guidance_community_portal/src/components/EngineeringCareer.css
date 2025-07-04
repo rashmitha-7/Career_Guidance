@@ -1,0 +1,280 @@
+/* Animation for page content */
+.career-page {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.career-page.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back link styling */
+.back-link {
+  color: #6c757d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-link:hover {
+  color: #007bff;
+  transform: translateX(-5px);
+}
+
+/* Header section styling */
+.header-section {
+  position: relative;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-section h1 {
+  margin-bottom: 1rem;
+}
+
+.header-section p.lead {
+  color: #6c757d;
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+/* Stats cards styling */
+.stats-container {
+  margin-top: 2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+}
+
+.stat-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.stat-info p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Section titles */
+.section-title {
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+/* Career cards styling */
+.careers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.career-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.career-card:hover {
+  transform: translateX(5px);
+  border-left-color: #007bff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.career-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  min-width: 100px;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.career-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.career-content h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.career-content p {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.career-details {
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}
+
+.detail-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-label {
+  font-weight: 600;
+  min-width: 120px;
+  color: #495057;
+}
+
+.detail-value {
+  color: #6c757d;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skills-label {
+  font-weight: 600;
+  color: #495057;
+  margin-right: 0.5rem;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-badge {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #495057;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+}
+
+/* Next steps section styling */
+.next-steps-container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.next-steps-title {
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.next-steps-text {
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.next-step-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.next-step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.next-step-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.next-step-card h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.next-step-card p {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .career-card {
+    flex-direction: column;
+  }
+  
+  .career-emoji {
+    padding: 1rem;
+    min-width: 100%;
+    font-size: 2rem;
+  }
+  
+  .detail-label {
+    min-width: 100%;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+} 

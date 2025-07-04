@@ -1,0 +1,124 @@
+/* Global Styles */
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3a0ca3;
+  --accent-color: #f72585;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --success-color: #4cc9f0;
+  --warning-color: #fcbf49;
+  --danger-color: #e63946;
+  --text-color: #2b2d42;
+  --gray-color: #8d99ae;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.slide-up {
+  animation: slideInUp 0.5s ease-out;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* Hover Effects */
+.hover-scale {
+  transition: transform var(--transition-speed);
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.hover-details {
+  transition: opacity var(--transition-speed);
+  opacity: 0;
+}
+
+.card:hover .hover-details {
+  opacity: 1;
+}
+
+.card-hover {
+  transition: all var(--transition-speed);
+  border: 1px solid transparent;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow);
+  border-color: var(--primary-color);
+}
+
+/* Interactive elements */
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Category images and cards */
+.category-img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: 4px solid transparent;
+}
+
+.card:hover .category-img {
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+  

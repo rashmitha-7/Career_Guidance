@@ -1,0 +1,213 @@
+/* Mentors Component Styling */
+
+.mentors-container {
+  max-width: 1280px;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Search and Filter styling */
+.search-filter-container {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  color: #6c757d;
+}
+
+.search-input {
+  padding-left: 40px;
+  height: 46px;
+  border-radius: 0.375rem;
+}
+
+.category-select {
+  height: 46px;
+  border-radius: 0.375rem;
+}
+
+.results-count {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+/* Mentor Card Styling */
+.mentors-grid {
+  margin-top: 1rem;
+}
+
+.mentor-card-container {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mentor-card-container.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mentor-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.mentor-image-container {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.mentor-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.mentor-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.mentor-name:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.mentor-title {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.mentor-rating {
+  display: flex;
+  align-items: center;
+}
+
+.mentor-bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.category-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.category-badge:hover {
+  transform: scale(1.05);
+}
+
+.expertise-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+.expertise-badge {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.info-icon {
+  font-size: 0.9rem;
+}
+
+.additional-info {
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+/* No Results Styling */
+.no-results {
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Image hover effect enhancement */
+.mentor-image-container:hover::after {
+  content: "View Profile";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .mentor-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-filter-container {
+    padding: 1rem;
+  }
+  
+  .mentor-card-container {
+    margin-bottom: 1.5rem;
+  }
+} 

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f72585;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#4361ee;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#grad1)" />
+  
+  <!-- Career Ladder -->
+  <path d="M150,350 L450,50" stroke="#4361ee" stroke-width="8" fill="none" stroke-linecap="round" />
+  
+  <!-- Career Steps -->
+  <circle cx="150" cy="350" r="30" fill="#4361ee" opacity="0.7" />
+  <circle cx="225" cy="275" r="25" fill="#4361ee" opacity="0.7" />
+  <circle cx="300" cy="200" r="30" fill="#4361ee" opacity="0.7" />
+  <circle cx="375" cy="125" r="25" fill="#4361ee" opacity="0.7" />
+  <circle cx="450" cy="50" r="30" fill="#4361ee" opacity="0.7" />
+  
+  <!-- Icons inside Steps -->
+  <text x="150" y="355" font-family="Arial" font-size="24" fill="white" text-anchor="middle">1</text>
+  <text x="225" y="282" font-family="Arial" font-size="20" fill="white" text-anchor="middle">2</text>
+  <text x="300" y="207" font-family="Arial" font-size="24" fill="white" text-anchor="middle">3</text>
+  <text x="375" y="132" font-family="Arial" font-size="20" fill="white" text-anchor="middle">4</text>
+  <text x="450" y="57" font-family="Arial" font-size="24" fill="white" text-anchor="middle">5</text>
+  
+  <!-- Career Labels -->
+  <rect x="100" y="380" width="100" height="20" rx="5" fill="#f72585" opacity="0.7" />
+  <rect x="175" y="305" width="100" height="20" rx="5" fill="#f72585" opacity="0.7" />
+  <rect x="250" y="230" width="100" height="20" rx="5" fill="#f72585" opacity="0.7" />
+  <rect x="325" y="155" width="100" height="20" rx="5" fill="#f72585" opacity="0.7" />
+  <rect x="400" y="80" width="100" height="20" rx="5" fill="#f72585" opacity="0.7" />
+  
+  <!-- Success Elements -->
+  <polygon points="500,25 510,50 535,50 515,65 525,90 500,75 475,90 485,65 465,50 490,50" fill="#4cc9f0" />
+  <polygon points="550,75 555,90 570,90 560,100 565,115 550,105 535,115 540,100 530,90 545,90" fill="#4cc9f0" />
+  <polygon points="75,300 80,315 95,315 85,325 90,340 75,330 60,340 65,325 55,315 70,315" fill="#4cc9f0" />
+  <polygon points="50,350 55,365 70,365 60,375 65,390 50,380 35,390 40,375 30,365 45,365" fill="#4cc9f0" />
+</svg> 
